@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Personas</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NOMBRE</th>
+                <th scope="col">APELLIDO</th>
+                <th scope="col">DOCUMENTO</th>
+                <th scope="col">CORREO</th>
+                <th scope="col">GENERO</th>
+                <th scope="col">EDAD</th>
+                <th scope="col">PASATIEMPO</th>
+           
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let item of personas' class="text-center"> 
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.apellidos}}</td>
+                    <td>{{item.documento}}</td>
+                    <td>{{item.correo}}</td>
+                    <td>{{item.genero}}</td>
+                    <td>{{item.edad}}</td>
+                    <td>{{item.pasatiempo}}</td>
+                   
+                  <td></td>
+                  <td></td>
+                </tr>
+        </table>
+
+    </div>
+
+</div>
